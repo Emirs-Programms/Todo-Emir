@@ -1,0 +1,169 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #3f51b5;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #303f9f;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #3f51b5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-list li:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.contact-list li span {
+  font-size: 16px;
+  flex-grow: 1;
+  color: black;
+}
+
+.contact-list li.important span {
+  font-weight: bold;
+  color: #e65100;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+}
+
+.important {
+  background-color: #ffe0b2;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+  }
+
+  .form input {
+    max-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Длительность анимации */
+}
+
+.contact-list li {
+  transition: background-color 0.3s;
+}
+.shrink {
+  transform: scale(0.8); /* Уменьшение размера кнопки */
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Длительность анимации исчезновения */
+}
+
+.button-group button {
+  font-size: 14px; /* Уменьшенный размер текста */
+  padding: 8px 12px; /* Подходящее значение для уменьшенного текста */
+}
+
+.delete-button {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
